@@ -1,25 +1,26 @@
 {
-    "name": "vdeapps/phpcore-chained-array",
+    "name": "vdeapps/php-wkhtmltopdf",
     "type": "library",
-    "description": "easy array manager",
+    "description": "Generate PDF from Url. Use an API",
     "keywords": [
         "vdeapps",
         "library",
-        "array"
+        "pdf",
+        "api"
     ],
-    "homepage": "https://github.com/vdeapps/phpcore-chained-array",
+    "homepage": "https://github.com/vdeapps/php-wkhtmltopdf",
     "license": "MIT",
     "authors": [
         {
             "name": "vdeApps",
             "email": "vdeapps@riseup.net",
-            "homepage": "https://github.com/vdeapps/phpcore-chained-array",
+            "homepage": "https://github.com/vdeapps/php-wkhtmltopdf",
             "role": "Developer"
         }
     ],
     "support": {
         "email": "vdeapps@riseup.net",
-        "issues": "https://github.com/vdeapps/phpcore-chained-array/issues"
+        "issues": "https://github.com/vdeapps/php-wkhtmltopdf/issues"
     },
     "config": {
         "platform": {
