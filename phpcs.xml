@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<ruleset name="Classes">
+    <description>Règles de développement</description>
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <file>src</file>
+    <exclude-pattern>*/src/views/*</exclude-pattern>
+    <exclude-pattern>*/src/assets/*</exclude-pattern>
+
+    <!-- Warn about lines longer than 135 chars, and never error. -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="250"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Don't check function braces, but check closure braces. -->
+    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman">
+        <properties>
+            <property name="checkFunctions" value="true"/>
+            <property name="checkClosures" value="true"/>
+        </properties>
+    </rule>
+
+    <rule>
+        <exclude phpcbf-only="true" name="Generic.WhiteSpace.ScopeIndent"/>
+    </rule>
+
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"></rule>
+    <rule ref="PSR2"></rule>
+
+</ruleset>
